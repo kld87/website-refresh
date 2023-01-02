@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>kevindawe.ca</title>
+    <meta name="description" content="Portfolio website for Kevin Dawe, Cybersecurity Specialist located in London, Canada. Passionate techie with 10+ years of experience.">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="ui fixed inverted menu banner">
+    <div class="ui container">
+        <span class="ui large text">kevin dawe <span class="ui text red">dot</span> ca</span>
+    </div>
+</div>
+
+<div class="ui container">
+    <div class="ui segment large text">
+        <h2>About Me
+            <span class="ui red text"><span clas="ui icon button" data-tooltip="Cybersecurity Specialist"><i class="lock icon button" data-content="Add users to your feed"></i></span></span>
+            <span class="ui orange text"><span clas="ui icon button" data-tooltip="Coder"><i class="code icon"></i></span></span>
+            <span class="ui yellow text"><span clas="ui icon button" data-tooltip="Linux Sysadmin"><i class="server icon"></i></span></span>
+            <span class="ui green text"><span clas="ui icon button" data-tooltip="Network Designer & Admin"><i class="wifi icon"></i></span></span>
+            <span class="ui  blue text"><span clas="ui icon button" data-tooltip="Database Designer & Admin"><i class="database icon"></i></span></span>
+            <span class="ui  violet text"><span clas="ui icon button" data-tooltip="Writer & Editor"><i class="file alternate outline icon"></i></span></span></h2>
+        <div class="ui divider"></div>
+        <h4>An Elevator Pitch</h4>
+        <br/>
+        <p>At a previous job, the running joke was that if somebody had a problem with something that runs on electricity, they would come to me. You can see that I <a href="#" onclick="$('#kid-modal').modal('show')">started young</a> and am <a href="#" onclick="$('#adult-modal').modal('show')">still at it</a> to this day. I've worn many hats, am always learning, and have the ability to tackle complex problems involving multiple technologies. Tech is not just a career for me, but also something that I'm constantly involved with on my own time.</p>
+        <p>Earlier in my career, I was primarily a full stack web developer and Linux sysadmin. More recently, my official title has been "Cybersecurity Specialist" meaning that I primarily do pentests and related IT security work. Lately, my focus has been on internal pentests with the occasional red/purple team engagement. I also do external and webapp tests and occasionally get to play around with mobile apps or a physical device as a welcome change of pace.</p>
+        <p>I've got my <a href="https://en.wikipedia.org/wiki/Offensive_Security_Certified_Professional" rel="noopener noreferrer nofollow" target="_blank">OSCP</a> and <a href="https://training.zeropointsecurity.co.uk/courses/red-team-ops" rel="noopener noreferrer nofollow" target="_blank">CRTO</a> certifications, a Bachelors of IT degree (with specialization in network security) from Ontario Tech University (formerly known as UOIT), and a wealth of professional and hobbyist experience in various tech disciplines.</p>
+        <p>Right now I’m living in and loving London, Ontario (Canada) and am working remotely full time. If you’d like to get in touch, please feel free via the methods below.</p>
+    </div>
+
+<!--     <div>
+        <div class="ui segment large text">
+        <h2>Experience</h2>
+        <div class="ui divider"></div>
+        <p>TBD</p>
+    </div> -->
+
+    <div class="ui grid">
+        <div class="sixteen wide mobile eight wide tablet four wide computer column" onclick="$('#contact-modal').modal('show')">
+            <div class="ui fluid link card">
+                <div class="content">
+                    <i class="right floated envelope outline icon large orange text"></i>
+                    <div class="header">Contact</div>
+                    <div class="meta">
+                    Email
+                    </div>
+                    <div class="description">
+                    Click to reveal
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sixteen wide mobile eight wide tablet four wide computer column">
+            <a href="https://www.twitter.com/KevinDaweCA" rel="noopener noreferrer nofollow" target="_blank">
+                <div class="ui fluid link card">
+                    <div class="content">
+                        <i class="right floated twitter icon large text twitter-blue"></i>
+                        <div class="header">Twitter</div>
+                        <div class="meta">
+                        Social
+                        </div>
+                        <div class="description">
+                        @KevinDaweCA
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="sixteen wide mobile eight wide tablet four wide computer column">
+            <a href="https://github.com/kld87/" rel="noopener noreferrer nofollow" target="_blank">
+                <div class="ui fluid link card">
+                    <div class="content">
+                        <i class="right floated github icon large text github-purple"></i>
+                        <div class="header">GitHub</div>
+                        <div class="meta">
+                        Code
+                        </div>
+                        <div class="description">
+                        @kld87
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="sixteen wide mobile eight wide tablet four wide computer column">
+            <a href="https://medium.com/@kevindawe" rel="noopener noreferrer nofollow" target="_blank">
+                <div class="ui fluid link card">
+                    <div class="content">
+                        <i class="right floated medium m icon large text medium-green"></i>
+                        <div class="header">Medium</div>
+                        <div class="meta">
+                        Writing
+                        </div>
+                        <div class="description">
+                        @kevindawe
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="text-center margin-top-small"><span class="ui small text">Content copyright © <span id="year"></span> Kevin Dawe unless otherwise stated or licensed.</span></div>
+</div>
+
+
+<div class="ui basic modal" id="contact-modal">
+    <div class="ui icon header">
+        <i class="orange envelope outline icon"></i>Contact
+    </div>
+    <div class="content text-center">
+        <img src="images/email.png" />
+        <br />
+        (to thwart spambots, this is an image)
+        <br /><br />
+        <div class="ui white inverted button" onclick="$('#contact-modal').modal('hide')">
+            <i class="remove icon"></i>Close
+        </div>
+    </div>
+</div>
+
+<div class="ui basic modal" id="kid-modal">
+    <div class="content text-center">
+        <div class="ui large image modal-image">
+            <img src="images/kid.jpg"/>
+        </div>
+        <br />
+        <div class="ui white inverted button" onclick="$('#kid-modal').modal('hide')">
+            <i class="remove icon"></i>Close
+        </div>
+    </div>
+</div>
+
+<div class="ui basic modal" id="adult-modal">
+    <div class="content text-center">
+        <div class="ui huge image modal-image">
+            <img src="images/adult.jpg"/>
+        </div>
+        <br />
+        <div class="ui white inverted button" onclick="$('#adult-modal').modal('hide')">
+            <i class="remove icon"></i>Close
+        </div>
+    </div>
+</div>
+
+
+<script>
+$("#year").text(new Date().getFullYear());
+</script>
+</body>
+</html>

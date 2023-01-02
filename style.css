@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin: 1rem 0 0 0;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  cursor: pointer;
+  color: #33CCFF;
+}
+
+body {
+    padding-top: 5rem;
+    background-color: #F4F4F4;
+}
+
+.modal-image {
+    display: inline-block !important;
+    margin: 1rem;
+}
+
+.banner {
+    padding: 1rem;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-top-small {
+    margin-top: 1rem;
+}
+
+.twitter-blue {
+    color:  #1DA1F2;
+}
+
+.github-purple {
+    color: #6E5494;
+}
+
+.medium-green {
+    color: #0F730C;
+}
